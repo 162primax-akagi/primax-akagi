@@ -1,0 +1,446 @@
+<!doctype html><!--ドキュメントタイプの宣言-->
+<html lang="ja">
+ <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta name="description" content="受賞経験のある建築家が設計し、デザイン性・カスタマイズ自由度も高いスタイリッシュな住宅デザインを提案している建築事務所です">
+	<title>山田建築事務所</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Italianno&family=Noto+Serif+JP&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/top.css">
+	<link rel="icon" href="assets/images/common/favicon.svg" type="image/x-icon">
+	<link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.svg">
+
+	<meta property="og:title" content="山田建築事務所">
+	<meta property="og:site_name" content="山田建築事務所">
+	<meta property="og:type" content="website"><!-- 下層ページはarticleにする -->
+	<meta property="og:locale" content="ja-JP">
+	<meta property="og:image" content="ftp://stu2312@hatafull-sv3.s.i.cloud3rs.io/k-231204/yamada/assets/images/common/ogp.png">
+	<meta property="og:description" content="受賞経験のある建築家が設計し、デザイン性・カスタマイズ自由度も高いスタイリッシュな住宅デザインを提案している建築事務所です">
+	<meta name="twitter:card" content="summary">
+</head>
+<body>
+  <header class="header"><!--ヘッダー-->
+    <h1 class="header_logo"><!--見出し-->
+        <a href="index.html"><!--【<a> ハイパーリンクを設定する】-->
+          <img src="assets/images/common/logo_header.svg" alt="山田建築事務所ヘッダー">
+        </a>
+    </h1>
+    <button class="header_hamburger" type="button"><!--【<button> クリックできるボタンを設置する。typeはボタンの役目を決定します。】-->
+      <span></span><!--【<span> インラインレベルの汎用的な範囲を指定する】-->
+      <span></span><!--【<span>は、何の意味も持たせたくない部分をグループ化する時に役立ちます。】-->
+      <span></span>
+    </button>
+    <div class="header_menu">
+      <nav class="header_nav"><!--【<nav> ページ上の主要なナビゲーションであることを表す】-->
+        <ul class="header_nav-list"><!--<ul> 順序のないリストを作成する-->
+          <li class="header_nav-item"><!--<li> リストの項目を作成する-->
+            <a href="concept/index.html">コンセプト</a>
+          </li><!--<li>タグの特徴【レイアウトの初期値はブロックレベルです。文章の改行に影響を与えます。】-->
+          <li class="header_nav-item"><!--【この要素のdisplayの値は、list-itemとなります。】-->
+            <a href="event/index.html">イベント</a>
+          </li><!--【視覚的な効果は特に与えられません。必要に応じてスタイルシートを調整して下さい。】-->
+          <li class="header_nav-item"><!--【同一のページ内に複数使うことができます。更に、この要素の中にリストを入れることもできます。】-->
+            <a href="works/index.html">実例一覧</a>
+          </li><!--【リストのマーカーを変更する場合は、list-style-typeプロパティを使います。】-->
+          <li class="header_nav-item"><!--【<ul class="list_sample">】-->
+            <a href="download/index.html">資料請求</a>
+          </li><!--【<li class="item1">リスト項目</li>】-->
+          <li class="header_nav-item"><!--【<li class="item2">リスト項目</li>】-->
+            <a href="news/index.html">お知らせ</a>
+          </li><!--【<li class="item3">リスト項目</li>】-->
+          <li class="header_nav-item"><!--【</ul>】-->
+            <a href="company/index.html">会社概要</a>
+          </li>
+          <li class="header_nav-item">
+            <a href="contact/index.html">お問合せ</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+        <div class="header_sns">
+          <nav class="header_nav-sns">
+            <ul class="header_ul-sns">
+              <li class="header_li-Instagram">
+                <a href="event/event-title/index.html">
+                  <img src="assets/images/top/Instagram_PC_header.svg" alt="Instagram">
+                </a>
+              </li>
+            </ul>
+          </nav>
+         </div>
+        <div class="header_nav">
+          <div class="header_tel"> <!--dtとddはdlで囲う必要がある-->
+            <dl class="header_information-tel"> <!--【dl（definition list）= 説明リスト】-->
+              <div class="header_tel-number"> <!--【<div> ブロックレベル要素としての範囲を指定】-->
+                <dt>TEL.</dt> <!--【dt（definition term）=  説明する言葉】-->
+                <dd> <!--【dd（definition description）= 定義文 or 説明文】-->
+                <a class="header_tel-number" href="tel:024-1111-2222">024-1111-2222</a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+            <dl class="header_information-list"><!--【dl（definition list）= 説明リスト】-->
+              <div class="header_information-item"><!--【<div> ブロックレベル要素としての範囲を指定】-->
+                <dt>受付時間.</dt><!--【dt（definition term）=  説明する言葉】-->
+                <dd>9:00-18:00</dd><!--【dd（definition description）= 定義文 or 説明文】-->
+              </div><!--【あらゆる場面で汎用的なまとまりを指定できます。】-->
+            </dl><!--【<dl>でリストを開始し、<dt>で用語を設定し、それに続く<dd>で説明や解説を行う。】-->
+          </div>
+  </header>
+  
+  <main> <!--メイン-->
+    <div class="section_mv"> <!--メインビジュアルs-->
+      <div class="container"> <!--コンテナs-->
+        <h2 class="h2_mv">
+          <picture class="picture_mv">
+            <sourse media="(max-width:767px)" srcset="assets/images/top/MV_title_SP.svg"></sourse>
+            <img src="assets/images/top/Andante.svg" alt="Andanteあるくような速さで　あなたのくらしに寄り添う家"> <!--✖src set_。スペース不要。〇「srcset」,sourse✖_スペルミス。〇「source」-->
+          </picture>
+        </h2>　
+      </div> <!--コンテナe-->
+      <div class="scroll_link"> <!--スクロール-->
+        <h2 class="scroll_section">
+          <span class="scroll_link_event"><a href="event/index.html"><img src="assets/images/top/top_scroll_event.jpg" srcset="assets/images/top/top_scroll_event.jpg 1x, top_scroll_event@2x.jpg 2x" alt=""></a></span>
+          <span class="scroll_link_contact"><a href="contact/index.html"><img src="assets/images/top/top_scroll_contact.jpg" srcset="assets/images/top/top_scroll_contact.jpg 1x, top_scroll_contact@2x.jpg 2x" alt=""></a></span> <!--"assets/images/top/top_scroll_contact.jpg 1x, top_scroll_contact@2x.jpg 2x"-->
+        </h2>
+      </div>
+    </div>　<!--メインビジュアルe-->
+    
+    <section class="section"> <!--concept-->
+      <div class="container">
+        <h2 class="title_section">
+          <span class="title_section-en">Concept</span>
+          <span class="title_section-jp">コンセプト</span>
+        </h2>
+          <div class="h2_text">
+            <p class="h2_1">あるくように。うたうように、</p>
+            <p class="h2_2">私達が奏でるのは人生です。</p>
+            <p class="h2_3">受賞経験のある建築家だからできる、</p>
+            <p class="h2_4">自由度の高いデザイン性と安全性を実現。</p>
+            <div class="concept_link">
+              <a href="concept/index.html">コンセプトを見る<img class="icon_link-arrow" src="assets/images/common/icon_link-arrow.svg" alt=""></a>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    <section class="section_event"> <!--event-->
+      <div class="container">
+        <h2 class="title_event">
+          <span class="title_event-en">Event</span>
+          <span class="title_event-jp">イベント</span>
+        </h2>
+          <ul class="event_pic">
+            <li class="event_pic1">
+            <figure class="event_info1"> <!--event1_写真-->
+              <a href="event/event-title/index.html">
+              <img src="assets/images/common/model1_PC.jpg" srcset="assets/images/common/model1_PC.jpg 1x, model1_PC@2x.jpg 2x" alt="イベント情報1"></a>
+            </figure>
+              <div class="event_container_items1">
+                  <ul class="event_items1"> <!--event1_ハッシュタグ、テキスト、日時、場所-->
+                    <li class="event_hashtag1">
+                      <p>#新築</p>
+                      <p>#60坪</p>
+                      <p>#30代</p>
+                      <p>#2階建て</p>
+                    </li>
+                    <h3 class="event_text">
+                      <p class="event_text1">家事がはかどる間取りが特徴のモデルハウスです。</p>
+                    </h3>
+                    <div class="event_item1">
+                      <h3 class="event_time1">
+                        <img class="event_time1_icon" src="assets/images/top/time_icon.jpg" alt="">
+                        <p class="event_time1_text">2024.01.01 ～ 2024.01.31</p>
+                      </h3>
+                      <h3 class="event_access1">
+                        <img class="event_access1_icon" src="assets/images/top/accsess_icon.jpg" alt="">
+                        <p class="event_access1_text">郡山市○○町</p>
+                      </h3>
+                    </div>
+                  </ul>
+                </div>
+              </li>
+            <li class="event_pic2">
+            <figure class="event_info2"> <!--event1_写真-->
+              <a href="event/event-title/index.html">
+              <img src="assets/images/common/model2_PC.jpg" srcset="assets/images/common/model2_PC.jpg 1x, model2_PC@2x.jpg 2x" alt="イベント情報2"></a>
+            </figure>
+              <ul class="event_container_items2">
+                  <li class="event_items2"> <!--event1_ハッシュタグ、テキスト、日時、場所-->
+                    <h3 class="event_hashtag2">
+                      <p>#新築</p>
+                      <p>#50坪</p>
+                      <p>#30代</p>
+                      <p>#2階建て</p>
+                    </h3>
+                    <h3 class="event_text">
+                      <p class="event_text2">シンプルな外観は、落ち着きがあって飽きのこないデザインです。</p>
+                    </h3>
+                    <div class="event_item2">
+                      <h3 class="event_time2">
+                        <img class="event_time2_icon" src="assets/images/top/time_icon.jpg" alt="">
+                        <p class="event_time2_text">2024.01.01 ～ 2024.01.31</p>
+                      </h3>
+                      <h3 class="event_access2">
+                        <img class="event_access2_icon" src="assets/images/top/accsess_icon.jpg" alt="">
+                        <p class="event_access2_text">郡山市○○町</p>
+                      </h3>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="event_pic3">
+            <figure class="event_info3"> <!--event1_写真-->
+              <a href="event/event-title/index.html">
+              <img src="assets/images/common/model3_PC.jpg" srcset="assets/images/common/model3_PC.jpg 1x, model3_PC@2x.jpg 2x" alt="イベント情報3"></a>
+            </figure>
+              <div class="event_container_items3">
+                  <ul class="event_items3"> <!--event1_ハッシュタグ、テキスト、日時、場所-->
+                    <li class="event_hashtag3">
+                      <p>#新築</p>
+                      <p>#60坪</p>
+                      <p>#アイランドキッチン</p>
+                    </li>
+                    <h3 class="event_text">
+                      <p class="event_text3">キッチンはアイランド型にし、回遊動線も確保しました。</p>
+                    </h3>
+                    <div class="event_item3">
+                      <h3 class="event_time3">
+                        <img class="event_time3_icon" src="assets/images/top/time_icon.jpg" alt="">
+                        <p class="event_time3_text">2024.01.01 ～ 2024.01.31</p>
+                      </h3>
+                      <h3 class="event_access3">
+                        <img class="event_access3_icon" src="assets/images/top/accsess_icon.jpg" alt="">
+                        <p class="event_access3_text">郡山市○○町</p>
+                      </h3>
+                      
+                </div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+          <div class="event_link">
+           <a href="event/index.html">イベント一覧を見る<img class="icon_link-arrow" src="assets/images/common/icon_link-arrow.svg" alt=""></a>
+          </div>
+      </div>
+      
+    </section>
+    
+    <section class="section"> <!--case-->
+      <div class="container">
+        <h2 class="title_case">
+          <span class="title_case_en">Case</span>
+          <span class="title_case_jp">実例一覧</span>
+        </h2>
+          <ul class="case_pic">
+            <li class="case_pic1">
+              <figure>
+                <a href="works/works-title/index.html">
+                <img src="../assets/images/common/case_pic1.jpg" srcset="assets/images/common/case_pic1.jpg 1x, assets/images/common/case_pic1@2x.jpg 2x" alt="実例詳細を見る"></a>
+              </figure>
+              <div>
+                <h3></h3>
+                <p class="case_new">新築戸建</p>
+                <p class="case_voice">お客様の声</p>
+                <p class="case_text">「どうしても大きなソファーが欲しくて、妻と相談して買いました」</p>
+              </div>
+            </li>
+            <li class="case_pic2">
+              <figure>
+                <a href="works/works-title/index.html">
+                <img src="assets/images/common/case_pic2.jpg" srcset="assets/images/common/case_pic2.jpg 1x, assets/images/common/case_pic2@2x.jpg 2x" alt="実例詳細を見る"></a>
+              </figure>
+              <div>
+                <h3></h3>
+                <p class="case_new">新築戸建</p>
+                <p class="case_voice">お客様の声</p>
+                <p class="case_text">「シンプルなのに、高級感もあって自由な空間が実現してうれしいです。」</p>
+              </div>
+            </li>
+            <li class="case_pic3">
+              <figure>
+                <a href="works/works-title/index.html"> 
+                <img src="assets/images/common/case_pic3.jpg" srcset="assets/images/common/case_pic3.jpg 1x, assets/images/common/case_pic3@2x.jpg 2x" alt="実例詳細を見る"></a>
+              </figure>
+              <div>
+                <h3></h3>
+                <p class="case_new">新築戸建</p>
+                <p class="case_voice">お客様の声</p>
+                <p class="case_text">「自然素材の空間はやっぱり気持ちがいいです。空気感がまったく違います。」</p>
+              </div>
+            </li>
+          </ul>
+          <div class="case_link">
+            <a href="works/index.html">実例一覧を見る<img class="icon_link-arrow" src="assets/images/common/icon_link-arrow.svg" alt=""></a>
+          </div>
+      </div>
+    </section>
+    
+    <section class="news_company_container">
+      <section class="news_section"> <!--news-->
+        <div class="news_container">
+          <h2 class="news_title">
+            <span class="news_en">News</span>
+            <span class="news_jp">お知らせ</span>
+          </h2>
+            <div class="news_pic">
+              <ul>
+                <li class="news_line">
+                  <time class="news_list-date" datetime="2023-04-04">2023.04.04</time>
+                  <h3 class="news_list-text1">
+                    <a href="news/news-title/index.html">ライフプランセミナーの開催について</a> <!--お知らせ詳細ページへリンク-->
+                  </h3>
+                </li>
+                <li class="news_line">
+                  <time class="news_list-date" datetime="2023-04-04">2023.04.04</time>
+                  <h3 class="news_list-text2">
+                    <a href="news/news-title/index.html">住宅ローン個別相談会について</a> <!--お知らせ詳細ページへリンク-->
+                  </h3>
+                </li>
+                <li class="news_line">
+                  <time class="news_list-date" datetime="2023-04-04">2023.04.04</time>
+                  <h3 class="news_list-text3">
+                    <a href="news/news-title/index.html">ショールーム見学会の開催予定について</a> <!--お知らせ詳細ページへリンク-->
+                  </h3>
+                </li>
+              </ul>
+            </div>
+            <div class="news_link">
+              <a href="news/index.html">お知らせ一覧を見る<img class="icon_link-arrow" src="assets/images/common/icon_link-arrow.svg" alt=""></a>
+            </div>
+        </div>
+      </section>
+      
+      <section class="company_section"> <!--company-->
+        <div class="news_container">
+          <h2 class="company_title">
+            <span class="company_en">Company</span>
+            <span class="company_jp">会社概要</span>
+            <div class="company_pic">
+              <ul>
+                <li>
+                  <a href="company/index.html"><img src="assets/images/common/Company_pic_PC.svg" alt="会社概要を見る"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="company_link">
+              <a href="company/index.html">会社概要を見る<img class="icon_link-arrow" src="assets/images/common/icon_link-arrow.svg" alt=""></a>
+            </div>
+          </h2>
+        </div>
+      </section>
+    </section>
+    
+    <section class="request_contact_container">
+    <section class="request_section">
+      <div class="request_container">
+        <h2 class="request_title">
+          <span class="request_en">Request</span>
+          <span class="request_jp">資料請求</span>
+          <div class="request_pic">
+            <ul>
+              <li>
+                <a href="download/index.html"><img src="assets/images/common/Request_banner_PC.svg" alt="資料請求する"></a>
+              </li>
+            </ul>
+          </div>
+        </h2>
+      </div>
+    </section>
+      
+    <section class="contact"> <!--contact-->
+      <div class="contact_container">
+        <h2 class="contact_title">
+          <span class="contact_en">Contact</span>
+          <span class="contact_jp">お問合せ</span>
+          <div class="contact_pic">
+            <h3 class="contact_text">山田建築事務所に関するお問合せはこちら</h3>
+              <div class="contact_tel">
+                <dt> <!--dt（definition term）= 定義する言葉:説明したいこと-->
+                  <dd class="contact_tel_text">TEL.</dd> <!--dd（definition description）= 定義の説明：それの説明-->
+                  <a class="contact_tel-number" href="tel:024-1111-2222" alt="電話番号">024-1111-2222</a>
+                </dt>
+              </div>
+              <div class="contact_information-item"><!--【受付時間】-->
+                <dt>受付時間.</dt><!--【<dt> 定義する言葉:説明したいこと】-->
+                <dd>9:00-18:00</dd><!--【<dd> 定義の説明：それの説明】-->
+              </div>
+              <div class="contact_link">
+                <dt>
+                  <dd class="contact_link_instagram">
+                    <a class="contact_link_logo" href="event/index.html">
+                    <img src="assets/images/common/contact_instagram_icon.svg" alt="">Instagram</a>
+                  </dd>
+                  <dd class="contact_link_mail">
+                    <a class="contact_link_logo" href="company/index.html">
+                    <img src="assets/images/common/contact_mail_icon.svg" alt="">お問合せフォーム</a>
+                  </dd>
+                </dt>
+              </div>
+          </div>
+        </h2>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer"> <!--footer-->
+    <a class="footer_pagetop" href="#"><img src="assets/images/common/footer_pagetop_sp.svg" alt="ページトップに戻る"></a>
+    <div class="footer_container"> <!--containerに横並びのflexをかける-->
+      <div class="footer_left">  
+        <a class="footer_logo" href="index.html"><img src="assets/images/common/logo_footer.svg" alt="フッター"></a>
+        <address class="footer_address">〒963-0207<br>福島県郡山市鳴神1丁目2番地<br>エクセルツリー 2F</address><!--【住所】-->
+        <dl> <!--dl（definition list）= 定義リスト-->
+          <div class="footer_tel">
+            <dt> <!--dt（definition term）= 定義する言葉:説明したいこと-->
+              <dd>TEL.</dd> <!--dd（definition description）= 定義の説明：それの説明-->
+              <a class="footer_tel-number" href="tel:024-1111-2222" alt="電話番号">024-1111-2222</a>
+            </dt>
+          </div>
+        </dl>
+        <dl>
+          <div class="footer_information-item"><!--【受付時間】-->
+            <dt>受付時間.</dt><!--【<dt> 定義する言葉:説明したいこと】-->
+            <dd>9:00-18:00</dd><!--【<dd> 定義の説明：それの説明】-->
+          </div>
+        </dl>
+      </div>
+      <div class="footer_information">
+        <div class="footer_div-1">
+          <nav class="footer_nav-1">
+          <ul class="footer_ul-1">
+            <li class="footer_concept"><a href="concept/index.html">コンセプト</a></li>
+            <li class="footer_event"><a href="event/index.html">イベント</a></li>
+            <li class="footer_download"><a href="download/index.html">資料請求</a></li>
+          </ul>
+          </nav>
+        </div>
+        <div class="footer_div-2">
+          <nav class="footer_nav-2">
+          <ul class="footer_ul-2">
+            <li class="footer_company"><a href="company/index.html">会社概要</a></li>
+            <li class="footer_news"><a href="news/index.html">お知らせ</a></li>
+            <li class="footer_contact"><a href="contact/index.html">お問合せ</a></li>
+          </ul>
+          </nav>
+        </div>
+        <div class="footer_div-3">
+          <nav class="footer_nav-3">
+          <ul class="footer_ul-3">
+            <li class="footer_case"><a href="works/index.html">実例一覧</a></li>
+            <li class="footer_Instagram"><a href="event/index.html">Instagram</a></li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+   <small>©︎ Yamada architecture office. All Rights Reserved.</small><!--【著作権】-->
+  </div>
+ </body>
+</html>
