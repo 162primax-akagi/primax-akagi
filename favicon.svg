@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-favicon">
+      <rect width="16" height="16"/>
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip-favicon)">
+    <rect width="16" height="16" fill="#fff"/>
+    <g id="グループ_1" data-name="グループ 1" transform="translate(0)">
+      <path id="パス_1" data-name="パス 1" d="M0,0V16L8,9.111,16,16V0Z" fill="#35829f"/>
+      <path id="パス_2" data-name="パス 2" d="M28.326,47.2l.014.664.641-.009-.014-.664Z" transform="translate(-21.273 -32.973)" fill="#35829f"/>
+      <path id="パス_3" data-name="パス 3" d="M28.853,42.053l-.641.009.014.664.641-.009Z" transform="translate(-21.188 -29.875)" fill="#35829f"/>
+      <path id="パス_4" data-name="パス 4" d="M33.964,42.641l-.014-.664-.64.009.014.664Z" transform="translate(-25.016 -29.822)" fill="#35829f"/>
+      <path id="パス_5" data-name="パス 5" d="M33.433,47.788l.641-.009-.014-.664-.641.009Z" transform="translate(-25.099 -32.913)" fill="#35829f"/>
+    </g>
+  </g>
+</svg>

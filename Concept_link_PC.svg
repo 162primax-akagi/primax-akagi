@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="50" viewBox="0 0 230 50">
+  <g id="Concept_link_PC" transform="translate(-581 -1053)">
+    <g id="linkbox_PC" transform="translate(581 1053)" fill="#35829f" stroke="#35829f" stroke-width="2">
+      <rect width="230" height="50" stroke="none"/>
+      <rect x="1" y="1" width="228" height="48" fill="none"/>
+    </g>
+    <g id="グループ_374" data-name="グループ 374" transform="translate(61 1066)">
+      <g id="グループ_535" data-name="グループ 535">
+        <path id="icon_link-arrow" d="M2804.014,683.584l7.878,7.106-7.878,5.076" transform="translate(-2104.015 -677.084)" fill="none" stroke="#fff" stroke-width="1"/>
+        <g id="グループ_344" data-name="グループ 344" transform="translate(-400)">
+          <g id="グループ_342" data-name="グループ 342" transform="translate(-10)">
+            <g id="グループ_381" data-name="グループ 381" transform="translate(972)">
+              <text id="コンセプトを見る" fill="#fff" font-size="16" font-family="ZenOldMincho-Regular, Zen Old Mincho"><tspan x="0" y="19">コンセプトを見る</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
