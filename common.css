@@ -1,0 +1,1094 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* セクション */
+.section {
+  padding: 10px 0;
+}
+
+.section_mv {
+  
+}
+
+/* コンテナ */
+.container { /* フッターでも使う */
+  width: calc(100% - (20px * 2)) ; /* 全体の横幅100%から左右の余白20px×2の分引いたサイズ*/
+  margin: 0 100px; /* 左右の余白marginを autoにして中央寄せ。コンテナは幅だけではなく、画面の中央に表示される。*/
+   /* max-width:の値で横幅の調整をする。余白でおかしいと思ったら、親要素の指定も変更する。 */
+  
+}
+
+
+/* ヘッダー */
+.header {
+  display: flex; /*【Display：要素の振る舞いを様々な形式に変化させる強力なプロパティです。フレックス・ボックスやグリッド・レイアウトも、このプロパティの宣言から開始します。CSSによるモダンデザインでは必須の機能になる。】【flex：要素はブロック要素として振る舞い、内容をフレックス・ボックス・レイアウトの仕様に従って配置します。】*/
+  width: 100%; /* 【width：要素の幅を指定する】【percentage：親要素の包含ブロックの幅に対する割合です。親要素の幅や画面のサイズが変わる環境で有用です。】 */
+  height: 100px; /* 【height：要素の高さを指定する】【percentage：包含ボックスの高さを対象とした割合を示す値です。正の数値とパーセントで表します。】 */
+  background: #FFFFFF; /* 【background：背景に関する指定をまとめて行う】【16進数値：16進数の文字列（0〜9, A〜F）を使った表記です。先頭にシャープ（#）を置き、６桁または３桁で表現します。透明度を表す場合はアルファチャネルを追加し、８桁または４桁で表現します。例えば、赤を表現する場合、#ff0000または#f00となります。】 */
+  align-items: center; /*【align-items：コンテナに含まれる全てのアイテムに対して揃える位置を指定する。フレックス・コンテナの交差軸またはグリッド・コンテナのブロック方向に対してアイテムの寄せ方や余白の取り方を指定します。】【center：アイテムをコンテナの交差軸に対して行の中心に揃えます。アイテムの大きさが包含ラインを超える場合、両方向に均等にはみ出します。】*/
+  gap: 40px;
+  position: fixed; /* 固定 */
+  z-index: 99; /* 最前面 */
+}
+@media (max-width:1280px) { /* 幅が1280px以下であれば(最大値が1280px以下であれば) */
+  .header {
+    height: 50px;
+    gap: 20px;
+    position: fixed; /* 固定 */
+    z-index: 99; /* 最前面 */
+  }
+}
+
+
+/* ヘッダー */
+.header_menu {
+  display: flex; /*【display：要素の表示形式を指定する】【flex:要素はブロック要素として振る舞い、内容をフレックス・ボックス・レイアウトの仕様に従って配置します。】*/
+  align-items: center; /*【align-items：コンテナに含まれる全てのアイテムに対して揃える位置を指定する】【center；アイテムをコンテナの交差軸に対して行の中心に揃えます。アイテムの大きさが包含ラインを超える場合、両方向に均等にはみ出します。*/
+  margin-left: auto;
+}
+@media (max-width:1280px) {
+  .header_menu {
+    display: none;
+  }
+}
+/* ヘッダーロゴ */
+.header_logo {
+  margin: 0 auto;
+}
+@media (max-width:1280px) {
+  .header_logo {
+    margin: 10 20px; /* margin不要の可能性あり？？ */
+    }
+}
+
+.header_logo img { /* 青系の色、白背景 */
+  height: 30px;
+  }
+
+.mv_title {
+  max-width: 1100px;
+  width: calc(100% - (20px * 2)) ;
+  margin: 0 auto;
+  padding-top: 30px;
+  
+}
+@media (max-width:1280px) {
+  .mv_title {
+    width: calc(100% - (20px * 2)) ;
+    padding-top: 60px;
+    margin: 0 auto; 
+  }
+}
+
+/* ナビゲーションリスト */
+.header_nav-list {
+  display: flex; /*【display：要素の表示形式を指定する】【flex:要素はブロック要素として振る舞い、内容をフレックス・ボックス・レイアウトの仕様に従って配置します。】*/
+  gap: 40px; /*【gap：コンテナに配置されたアイテム同士の隙間を指定する。段組み要素、フレックス・ボックス、グリッド・レイアウトのコンテナに含まれるアイテム同士の行や列の隙間を指定します。本プロパティは、親要素であるコンテナ側に指定します。】【指定できる値：<length>：CSSで使用できる単位付きのデータ型の値です。コンテナの中に並ぶアイテムの隙間を指定します。】*/
+}
+
+/* ナビゲーションリストの文字色,フォント,サイズ */
+.header_nav-item a {
+  color: #07222A;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ナビゲーションリストの文字色,フォント,サイズ */
+.header_sns {
+
+  }
+@media(max-width:1280px) {
+  .header_sns {
+    margin-left: auto;
+  }
+}
+
+.header_nav-sns {
+  
+}
+@media (max-width:1280px) {
+.header_nav-sns {
+  order: 2;
+  margin-left: auto;
+    }
+  }
+
+/* ヘッダー電話と受付 */
+.header_nav {
+  margin: 0 auto;
+}
+
+/* ヘッダー電話リンク */
+.header_tel {
+  color: #07222A; /* 電話番号の文字色 */
+  font-size: 18px; /* 電話番号の文字サイズ */
+  font-family: "Noto Sans JP"; /* 電話番号のフォント */
+  align-items: center; /*【align-items：コンテナに含まれる全てのアイテムに対して揃える位置を指定する】【center；アイテムをコンテナの交差軸に対して行の中心に揃えます。アイテムの大きさが包含ラインを超える場合、両方向に均等にはみ出します。*/
+  justify-content: center;
+  text-decoration: none;
+}
+
+.header_tel-number {
+  color: #07222A; /* 電話番号の文字色 */
+  display: flex;
+}
+@media(max-width:1280px) {
+  .header_tel {
+    display: none;
+  }
+}
+
+/* ヘッダー　受付時間 */
+.header_information-list {
+  display: flex; /* 受付時間の文字と時間を横並びにする */
+  font-size: 16px; /* 電話番号の文字サイズ */
+  font-family: "Zen Old Mincho"; /* 電話番号のフォント */
+  letter-spacing: 0.05em /*  */
+}
+
+.header_information-item {
+  display: flex; /*電話番号と受付時間と時間を横並びにする*/
+  }
+@media(max-width:1280px) {
+  .header_information-item {
+    display: none;
+  }
+}
+
+/* ハンバーガーボタン */
+.header_hamburger {
+  display: none; /*【Display：要素の振る舞いを様々な形式に変化させる強力なプロパティです。フレックス・ボックスやグリッド・レイアウトも、このプロパティの宣言から開始します。CSSによるモダンデザインでは必須の機能になる。】【none;要素を表示しません。子要素を含む全ての内容が画面上から消えます。本来表示されるはずだった要素の寸法は確保されないため、レイアウトに影響を与えません。これを確保しつつ表示だけを制御したい場合は、visibilityを使用して下さい。*/
+}
+@media (max-width:1280px) {
+  .header_hamburger {
+    display: block; /*【block】この値が指定された要素はブロックレベルのボックスを生成します。通常のフローでは、要素の前後で改行を行います。 */
+    width: 50px; /*【ハンバーガーボタンの幅】*/
+    height: 50px; /*【ハンバーガーボタンの高さ】*/
+    background: #35829F; /*【ハンバーガーボタンの背景色（ロゴと同色）】*/
+    border: none; /*【線が消える】*/
+    position: relative; /*【position：要素の位置指定の種類を変更する】【absolute:要素を通常のフローから除外し、位置指定を実行するプロパティの対象とします。（header_hamburgerを基準に配置）】*/
+    order: 3;
+  }
+  .header_hamburger span { /*【インラインレベルコンテンツなのでこのままではWidthやheightが効かない】*/
+    display: block; /*【display:要素の振る舞いを様々な形式に変化させる強力なプロパティです。フレックス・ボックスやグリッド・レイアウトも、このプロパティの宣言から開始します。】【block:この値が指定された要素はブロックレベルのボックスを生成します。通常のフローでは、要素の前後で改行を行います。】*/
+    width: 20px; /*【ハンバーガーボタンのライングループの幅】*/
+    height: 1px; /*【ハンバーガーボタンのラインのサイズ（XD=1px）】*/
+    position: absolute; /*【一旦、真ん中に寄せて後から個別に上、中、下に指定する。】*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto; /*【margin:要素の外側の余白をまとめて指定します。具体的には、CSSのボックス・モデルにおけるマージン・ボックス（Margin box）の寸法を定義するものです。】【auto:ブラウザの自動計算を採用します。要素の左右にこの値を指定すると、均等に余白を分配するため中央に寄せられて配置されます。】*/
+  }
+  .header_hamburger span:nth-child(1) { /*【1番目の要素（上の線）】*/
+    background: #FFFFFF; /*【線の色(colorで指定しない)】*/
+    top: -16px; /*【真ん中の線から-8pxに指定したが、1pxとして計算されず、0.5pxとして計算されたため8pxの２倍の16pxを指定する。デザインの値はそのまま使用せず、参考にすること。*/
+    transition: opacity .3s; /*【transition：時間によって変化するトランジション効果の値をまとめて操作する】【opacity:CSSのプロパティで、要素の不透明度を設定します。】【.3s（3秒=secondかけて変形する）】*/
+  }
+  .header_hamburger span:nth-child(3) { /*【3番目の要素（下の線）】*/
+    background: #FFFFFF; /*【線の色(colorで指定しない)】*/
+    bottom: -16px; /*【真ん中の線から-8pxに指定したが、1pxとして計算されず、0.5pxとして計算されたため8pxの２倍の16pxを指定する。デザインの値はそのまま使用せず、参考にすること。*/
+    transition: opacity .3s; /*【transition：時間によって変化するトランジション効果の値をまとめて操作する】【opacity:CSSのプロパティで、要素の不透明度を設定します。】【.3s（3秒=secondかけて変形する）】*/
+  }
+  .header_hamburger span:nth-child(2)::before, /**/
+  .header_hamburger span:nth-child(2)::after { /**/
+    content: ''; /*【疑似要素はspanと同じでインラインレベルコンテンツなのでdisplay: block;を指定してからwidthなどを指定する*/
+    display: block; /*ある要素を【block】に指定した場合、その要素の子要素は block と inline の通常フローレイアウトに参加することが期待されます。*/
+    width: 20px; /*ライングループの幅が20px*/
+    height: 1px; /*ライングループの線の太さが1px*/
+    background: #FFFFFF;
+    /*.header_hamburger spanでposition: absolute;が指定済みで座標の基準なので、position: relative;は指定せず、このままにする*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto; /*topからmargin: auto;を指定して上下左右中央ぞろえに配置する*/
+    transition: transform .3s; /*変形まわりに変更があった場合は「0.3秒かけて変形する」指定*/
+    transform-origin: center /*変形するときの基準位置。真ん中が基準。*/
+  }
+}
+
+/* concept */
+.container_concept {
+  width: 100%;
+  padding: 0 100px; /* paddingは要素の内部に追加の領域を作成します。*/
+  margin: 0 auto; /* marginは要素の周りに追加の領域を作成します。 */
+  height: 388px; /* 高さ */
+  font-family: "Zen Old Mincho"; /* フォント */
+  color: #333333; /* 黒系文字 */
+  display: flex; /* 横並び */
+}
+
+.title_section {
+  width: 107px;
+  height: 65px;
+  font-weight: normal;
+  position: absolute;
+}
+
+.title_section-en {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.title_section-jp {
+  width: 80px;
+  height: 25px;
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  margin-left: 8px;
+  
+}
+
+.h2_text {
+  text-align: center;
+  font-family: "Noto Serif JP";
+  margin: 0 auto;
+}
+.h2_1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.h2_2 {
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+.h2_3 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 40px;
+}
+
+.h2_4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 30px;
+}
+.concept_link {
+  width: 230px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+}
+.concept_link a {
+  color: #ffffff;
+  align-self: center;
+}
+
+.concept_link-arrow img {
+  padding-top: 60px;
+}
+.icon_link-arrow {
+  margin-left: 10px;
+  vertical-align: baseline;
+}
+
+
+/* event */
+.section_event {
+  width: 100%;
+  margin: 0 auto; /* 左右の余白marginを autoにして中央寄せ。コンテナは幅だけではなく、画面の中央に表示される。*/
+  background: #07222A; /* 背景色 */
+  color: #FFFFFF; /* 文字色→白色 */
+  height: 700px;
+  margin-top: 40px;
+}
+.section_container {
+
+}
+
+.title_event {
+  width: 80px;
+  height: 70px;
+  color: #ffffff;
+  font-family: "Zen Old Mincho";
+  font-weight: normal;
+  padding-top: 10px;
+}
+.title_event-en {
+  font-size: 28px;
+  z-index: 1;
+}
+.title_event-jp {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  padding-left: 3px;
+}
+.event_pic {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  padding-top: 50px;
+  z-index: 1;
+  color: #333333;
+  justify-content: center;
+}
+.event_pic1 {
+  max-width: 1300px; /* ←コンテンツ幅が1100pxで、左右に余白を100px確保した状態にできる */
+  height: 400px;
+  font-family: "Zen Old Mincho";
+  font-weight: normal;
+}
+.event_info1 {
+  width: 300px;
+  height: 200px;
+}
+.event_info1 img {
+  width: 300px;
+  height: 200px;
+}
+.event_container_items1 {
+  display: flex;
+}
+.event_items1 {
+  width: 300px;
+  height: 200px;
+  background: #ffffff;
+  z-index: 1;
+}
+.event_items1 a {
+  
+}
+.event_hashtag1 {
+  display: flex;
+  width: 230px;
+  height: 20px;
+  font-size: 14px;
+  gap: 10px;
+  padding-top: 15px;
+  margin-left: 25px;
+}
+.event_text1 {
+  width: 270px;
+  height: 45px;
+  padding-top: 40px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.event_item1 {
+  padding-top: 70px;
+  margin-left: 25px;
+}
+.event_time1 {
+  display: flex;
+  gap: 25px;
+  width: 270px;
+  height: 30px;
+  align-items: center;
+  font-weight: normal;
+}
+.event_access1 {
+  display: flex;
+  gap: 25px;
+  width: 270px;
+  height: 30px;
+  align-items: center;
+  font-weight: normal;
+}
+
+.event_pic2 {
+  
+}
+.event_info-link2 {
+  width: 300px;
+  height: 200px;
+}
+.event_info-link2 img {
+  display: flex;
+}
+.event_items2 {
+  width: 300px;
+  height: 200px;
+  background: #ffffff;
+  z-index: 1;
+}
+.event_hashtag2 {
+  display: flex;
+  width: 230px;
+  height: 20px;
+  font-size: 14px;
+  gap: 10px;
+  padding-top: 15px;
+  margin-left: 25px;
+  font-weight: normal;
+}
+.event_text2 {
+  width: 270px;
+  height: 45px;
+  padding-top: 40px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.event_item2 {
+  padding-top: 70px;
+  margin-left: 25px;
+}
+.event_time2 {
+  display: flex;
+  gap: 25px;
+  width: 270px;
+  height: 30px;
+  align-items: center;
+  font-weight: normal;
+}
+.event_access2 {
+  display: flex;
+  gap: 25px;
+  width: 270px;
+  height: 30px;
+  align-items: center;
+  font-weight: normal;
+}
+
+.event_pic3 {
+  
+}
+
+.event_info-link3 {
+  display: flex;
+}
+.event_items3 {
+  width: 300px;
+  height: 200px;
+  background: #ffffff;
+  z-index: 1;
+}
+.event_hashtag3 {
+  display: flex;
+  width: 230px;
+  height: 20px;
+  font-size: 14px;
+  gap: 10px;
+  padding-top: 15px;
+  margin-left: 25px;
+  font-weight: normal;
+}
+.event_text3 {
+  width: 270px;
+  height: 45px;
+  padding-top: 40px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.event_item3 {
+  padding-top: 70px;
+  margin-left: 25px;
+}
+.event_time3 {
+  display: flex;
+  gap: 25px;
+  width: 270px;
+  height: 30px;
+  align-items: center;
+  font-weight: normal;
+}
+.event_access3 {
+  display: flex;
+  gap: 25px;
+  width: 270px;
+  height: 30px;
+  align-items: center;
+  font-weight: normal;
+}
+.event_link {
+  width: 230px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  text-align: center;
+  margin: 40px auto;
+  display: grid;
+}
+.event_link a {
+  color: #ffffff;
+  align-self: center;
+}
+
+/* Case */
+.title_case {
+  width: 64px;
+  height: 64px;
+  font-family: "Zen Old Mincho";
+  font-weight: normal;
+  color: #07222A;
+}
+
+.title_case_en {
+  width: 63px;
+  height: 40px;
+  font-size: 28px;
+}
+
+.title_case_jp {
+  display: block;
+  font-size: 16px;
+}
+.case_pic {
+  width: 100%;
+  height: 470px;
+  display: flex;
+  gap: 60px;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.case_new {
+  width: 64px;
+  height: 24px;
+  margin-top: 15px;
+  margin-left: 18px;
+  margin-bottom: 24px;
+}
+.case_voice {
+  margin-left: 16px;
+}
+
+.case_text {
+  width: 240px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.case_link {
+  width: 230px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+  justify-content: center;
+  margin: 40px auto;
+  display: grid;
+}
+.case_link a {
+  color: #ffffff;
+  align-self: center;
+}
+
+/* news_company */
+.news_company_container {
+  height: 355px;
+  display: flex;
+  background-color: #07222A;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+/* news */
+.news_section {
+  width: 50%;
+}
+
+.news_container {
+  width: calc(100% - (20px * 2));
+  margin: 0 100px;
+  font-weight: normal;
+}
+
+.news_title {
+  width: 71px;
+  height: 64px;
+  font-weight: normal;
+}
+
+.news_en {
+  font-size: 28px;
+  width: 71px;
+  height: 40px;
+}
+
+.news_jp {
+  display: flex;
+  font-size: 16px;
+  width: 64px;
+  height: 24px;
+}
+.news_pic {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  width: 481px;
+  height: 150px;
+  padding-top: 40px;
+  
+}
+
+.news_line {
+  
+}
+
+.news_list-text1 {
+  display: inline;
+  padding-left: 50px;
+}
+.news_list-text1 a {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.news_list-text2 {
+  display: inline;
+  padding-left: 50px;
+}
+.news_list-text2 a {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.news_list-text3 {
+  display: inline;
+  padding-left: 50px;
+}
+.news_list-text3 a {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.news_link {
+  width: 230px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  margin-top: 55px;
+  margin-left: 100px;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+}
+.news_link a {
+  color: #ffffff;
+  align-self: center;
+}
+
+/* company */
+.company_section {
+  
+}
+
+.company_container {
+  width: calc(100% - (20px * 2));
+  margin: 0 auto;
+}
+
+.company_title {
+  width: 107px;
+  height: 64px;
+  font-weight: normal;
+}
+
+.company_en {
+  font-size: 28px;
+  width: 107px;
+  height: 40px;
+}
+
+.company_jp {
+  display: flex;
+  font-size: 16px;
+  width: 64px;
+  height: 24px;
+  margin: 0 22px;
+}
+
+.company_pic {
+  width: 480px;
+  height: 150px;
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.company_pic img {
+  width: 433px;
+  height: 150px;
+}
+
+.company_link {
+  width: 230px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  margin-top: 55px;
+  margin-left: 120px;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+}
+.company_link a {
+  color: #ffffff;
+  align-self: center;
+  
+}
+
+/* request_contact */
+
+.request_contact_container {
+  height: 355px;
+  display: flex;
+  padding-top: 10px;
+}
+
+/* request */
+.request_section {
+  width: 50%;
+}
+
+.request_container {
+  width: calc(100% - (20px * 2));
+  margin: 0 100px;
+}
+
+.request_title {
+  width: 71px;
+  height: 64px;
+  color: #07222A;
+  font-weight: normal;
+}
+
+.request_en {
+  font-size: 28px;
+  width: 71px;
+  height: 40px;
+}
+
+.request_jp {
+  display: flex;
+  font-size: 16px;
+  width: 64px;
+  height: 24px;
+  margin-left: 14px;
+}
+.request_pic {
+  width: 481px;
+  height: 160px;
+  padding-top: 30px;
+}
+.request_pic img {
+  width: 481px;
+  height: 160px;
+  margin-top: 30px;
+}
+
+.request_link {
+  width: 230px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+
+/* contact */
+
+.contact_section {
+  
+}
+
+.contact_container {
+  width: calc(100% - (20px * 2));
+  margin: 0 100px;
+}
+
+.contact_title {
+  width: 107px;
+  height: 64px;
+  color: #07222A;
+  font-weight: normal;
+}
+
+.contact_en {
+  font-size: 28px;
+  width: 107px;
+  height: 40px;
+}
+
+.contact_jp {
+  display: flex;
+  font-size: 16px;
+  width: 64px;
+  height: 24px;
+  margin: 0 16px;
+}
+
+.contact_pic {
+  width: 480px;
+  height: 150px;
+  margin: 20px 90px;
+}
+
+.contact_pic img {
+  width: 433px;
+  height: 150px;
+}
+.contact_text {
+  width: 305px;
+  height: 25px;
+  font-size: 16px;
+  font-weight: normal;    
+  margin: 15px auto;
+}
+.contact_text a {
+  
+}
+
+.contact_tel {
+  display: flex;
+  width: 310px;
+  height: 50px;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+.contact_tel_text {
+  
+}
+.contact_tel-number {
+  color: #07222A;
+}
+.contact_tel-number a {
+  color: #07222A;
+}
+
+.contact_information-item {
+  display: flex;
+  width: 240px;
+  height: 40px;
+  color: #07222A;
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 0.05em; /* XDで文字の間隔50pxあける */
+  margin: 0 auto;
+}
+
+.contact_link {
+  height: 50px;
+  display: flex;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.contact_link a {
+  color: #ffffff;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+}
+
+.contact_link_logo {
+  
+}
+.contact_link_instagram {
+  width: 400px;
+  height: 50px;
+  background-color: #35829F;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.contact_link_instagram a {
+  font-size: 20px;
+}
+
+.contact_link_instagram img {
+  width: 21px;
+  height: 21px;
+  background-color: #35829F;
+  color: #ffffff;
+}
+
+.contact_link_mail {
+  width: 400px;
+  height: 50px;
+  background-color: #07222A;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+}
+.contact_link_mail img {
+  width: 27px;
+  height: 20px;
+  background-color: #07222A;
+  color: #ffffff;
+}
+
+
+/* フッター */
+.footer { /* footerの中にあるcontainerにのみ指定する */
+  background: #07222A; /* フッターの背景色 */
+  color: #FFFFFF; /* 文字色→白色 */
+  padding: 20px 0;
+}
+@media(max-width:767px) {
+  .footer {
+    background: #07222A; /* フッターの背景色 */
+    color: #FFFFFF; /* 文字色→白色 */
+    padding: 30px 0;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+/* フッター・コンテナ */
+.footer .footer_container { /* footerの中にあるcontainerにのみ指定する */
+  display: flex; /* 横並び */
+  font-size: 16px; /* 文字サイズ */
+  font-family: "Zen Old Mincho"; /* 電話番号のフォント */
+  justify-content: space-between;
+  width: calc(100% - (20px * 2)) ;
+  margin: 0 auto;
+}
+/* フッター　ロゴから住所 */
+.footer_left {
+  margin: 0 100px;
+}
+
+/* フッター　ロゴ */
+.footer_logo {
+
+}
+.footer_logo img {
+  flex-shrink: 0;
+}
+
+/* フッター　住所 */
+.footer_address { /* footerの中にあるcontainerにのみ指定する */
+  font-style: normal;
+  padding-top: 30px;
+}
+
+/* フッター　電話 */
+.footer_tel {
+  display: flex; /* TEL.と電話番号を横並びにする */
+  letter-spacing: 0.05em; /* XDで文字の間隔50pxあける */
+  padding-top: 20px;
+}
+.footer_tel a {
+  display: inline-flex; /* TEL.と電話番号を横並びにする */
+  color: #FFFFFF; /* 文字色→白色 */
+  letter-spacing: 0.05em /* XDで文字の間隔50pxあける */
+}
+
+/* フッター　受付時間 */
+.footer_information-item {
+  display: flex; /*受付時間（文字）と時間を横並びにする*/
+  font-size: 14px; /* 受付時間の文字サイズ */
+  letter-spacing: 0.05em /* XDで文字の間隔50pxあける */
+  }
+
+/* フッター　ページリンク */
+.footer_information {
+  order: 3;
+  font-size: 18px;
+  margin: 0 100px;
+}
+
+.footer_information a {
+  color: #FFFFFF; /* 文字色→白色 */
+}
+
+/* フッター　コンセプト・イベント・資料請求 */
+.footer_div-1 {
+  order: 2;
+  justify-content: space-between;
+}
+
+.footer_ul-1 {
+  display: flex;
+  padding-top: 90px;
+  letter-spacing: -0.1em;
+}
+
+.footer_event {
+  margin-left: 50px;
+}
+
+.footer_download {
+  margin-left: 70px;
+}
+
+/* フッター　会社概要・お知らせ・お問合せ */
+.footer_ul-2 {
+  display: flex;
+  padding-top: 20px;
+  gap: 60px;
+}
+
+/* フッター　実例一覧・SNS */
+.footer_ul-3 {
+  display: flex;
+  padding-top: 20px;
+  gap: 60px;
+}
+
+/* フッター　ページトップに戻る */
+.footer_pagetop {
+  display: none;
+  
+}
+@media(max-width:767px) {
+  .footer_pagetop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #07222A;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: -45px;
+  }
+}
+@media(max-width:767px) {
+  .footer_pagetop:hover { /* ：「コロン」は１つで良い*/
+    color: #35829F;
+  }
+}
+
+/* コピーライト */
+.copyright {
+  order: 2;
+  text-align: center;
+  justify-content: space-between;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  background: #07222A;
+  color: #FFFFFF;
+}
+  
+@media(max-width:767px) {
+  .copyright {
+    
+  }
+} 
